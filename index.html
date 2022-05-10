@@ -1,5 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body></body>
+    <head>
+        <link rel="stylesheet" href="app.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+        <title> Registration form </title>
+    </head>
+
+    <body>
+        <div id="container">
+        <h1>Registration form</h1>
+
+        <h3>Full Name</h3>
+        <input type="text" id="full-name">
+
+        <h3>Username</h3>
+        <input type="text" id="username">
+
+        <h3>Password</h3>
+        <input type="password" id="password" minlength="8">
+
+        <h3>Age</h3>
+        <input type="number" id="age" min="8" max="120">
+
+        <h3>Email</h3>
+        <input type="email" id="email">
+
+        <h3>Gender</h3>
+        <select name="gender" id="gender">
+            <option id="gender-placeholder" disabled>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            <option value="refuse-to-state">Refuse to state</option>
+        </select>
+
+        <br>
+
+        <input type="checkbox" id="accepted" required>
+        <label for="accepted">accept terms and conditions</label>
+        
+        <br>
+
+        <button type="submit">Submit</button>
+        </div>
+
+    </body>
 </html>
