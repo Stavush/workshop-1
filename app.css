@@ -1,6 +1,6 @@
 body{
     background-color: #6c5ce7;
-    width: 75%;
+    width: 60%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -29,7 +29,7 @@ input:hover, select:hover{
 }
 
 #email{
-    width: 50%;
+    width: 60%;
 }
 
 button{
