@@ -1,4 +1,7 @@
 # Welcome to Workshop 1
+##Screenshot
+![screenshot](https://github.com/Stavush/workshop-1/blob/main/assets/img.png?raw=true)
+
 ## Registration form
 ### The goal of this workshop to practice html & css skills. 
 Your taks is to create this kind of form. 
