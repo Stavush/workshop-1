@@ -1,50 +1,86 @@
 body{
-    background-color: #6c5ce7;
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
+    background-color: #c44569;
 }
 
 #container{
     font-family: 'Poppins', sans-serif;
     color: #2d3436;
     background-color: #FFF;
-    padding: 50px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    min-width: 250px;
+    padding: 30px;
     border-radius: 25px;
-    margin-top: 5%;
 }
 
 h1{
+    font-family: 'Luckiest Guy', cursive;
+    color: #e15f41;
+    font-size: 2.5rem;
     text-align: center;
 }
 
+h3{
+    color: #e15f41;
+}
+
 input, select{
-    border: 1px solid rgb(136, 136, 136);
-    border-radius: 3px;
+    background-color: #ea8685;
+    border: none;
+    border-radius: 5px;
     height: 25px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    font-size:16px;
 }
 
 input:hover, select:hover{
-    box-shadow: #6c5ce7 0px 2px 8px 0px;
+    box-shadow: #f5cd79 0px 2px 8px 0px;
 }
 
-#email{
-    width: 60%;
+#age{
+    width: 50%
+}
+
+#accepted{
+    width: 100px;
+}
+
+
+#checkbox-container{
+    width: 100%;
+    display:inline-flex;
+    font-size: 16px;
 }
 
 button{
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     border-style:none;
     border-radius: 3px;
     color: #FFF;
-    background-color: #2d3436;
+    background-color: #ea8685;
     height: 30px;
     margin-left: 50%;
 }
 
 button:hover{
-    background-color: #6c5ce7;
+    background-color: #e15f41;
     color: #FFF;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+button:active{
+    transform: translateY(2px);
+}
+
+
+p{
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}

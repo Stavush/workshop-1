@@ -3,8 +3,12 @@
     <head>
         <link rel="stylesheet" href="app.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/27f05d0dc4.js" crossorigin="anonymous"></script>        
         <title> Registration form </title>
     </head>
 
@@ -12,23 +16,23 @@
         <div id="container">
         <h1>Registration form</h1>
 
-        <h3>Full Name</h3>
-        <input type="text" id="full-name">
+        <h3>* Full Name</h3>
+        <input type="text" id="full-name" required>
 
-        <h3>Username</h3>
-        <input type="text" id="username">
+        <h3>* Username</h3>
+        <input type="text" id="username" required>
 
-        <h3>Password</h3>
-        <input type="password" id="password" minlength="8">
+        <h3>* Password</h3>
+        <input type="password" id="password" minlength="8" required>
 
-        <h3>Age</h3>
-        <input type="number" id="age" min="8" max="120">
+        <h3>* Age</h3>
+        <input type="number" id="age" min="8" max="120" required>
 
-        <h3>Email</h3>
-        <input type="email" id="email">
+        <h3>* Email</h3>
+        <input type="email" id="email" required>
 
-        <h3>Gender</h3>
-        <select name="gender" id="gender">
+        <h3>* Gender</h3>
+        <select name="gender" id="gender" required>
             <option id="gender-placeholder" disabled selected>Select your gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
@@ -37,14 +41,21 @@
         </select>
 
         <br><br>
-
-        <input type="checkbox" id="accepted" required>
-        <label for="accepted">accept terms and conditions</label>
+        <div id="checkbox-container">
+            <input type="checkbox" id="accepted" required>
+            <label for="accepted" id="accepted-label">* accept terms and conditions</label>
+        </div>
+        
         
         <br><br>
 
-        <button type="submit">Submit</button>
-        </div>
+        <button type="submit">Submit <i class="fa-solid fa-paper-plane"></i></button>
+
+        <p>* required</p> 
+
+    </div>
+
+        
 
     </body>
 </html>
